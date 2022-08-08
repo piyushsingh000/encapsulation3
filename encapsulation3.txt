@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+class Person {
+    private:
+    string name;
+    int age;
+    
+    
+    public:
+    string getname(){
+        return name;
+        
+    }
+    void setname(string n){
+        this -> name = n; 
+    }
+     int getage(){
+        return age;
+        
+    }
+    void setage(int a){
+        this -> age = a; 
+    }
+};
+
+int main () {
+    Person obj;
+    string N;
+    int A ;
+    cin>>N;
+    cin>>A;
+    if (N.empty() == true &&  A ==0 ){
+        return -1;
+    }else {
+    obj.setname(N);
+    obj.setage(A);
+    cout<<"my name is "<<obj.getname()<<"  "<<"my age is: "<<obj.getage();
+    
+    }   
+}
